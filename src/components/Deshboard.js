@@ -1,7 +1,11 @@
 import { Button } from 'antd'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Building from '../classFile/Building'
+// import Building from '../../classFile/Building'
 import { app } from '../base'
+import LetsBuild from '../classFile/LetsBuild'
+
 
 
 const userData = app.firestore().collection("user")
@@ -72,6 +76,11 @@ style={{
           {file && file.user}
         </div>
       </div>
+    
+    <div>
+      <LetsBuild /> 
+    
+    </div>
     </div>
   )
 }
