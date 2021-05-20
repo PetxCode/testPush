@@ -34,6 +34,17 @@ const HeaderPage = () => {
          >
          Deshbord</Link>
         </div>
+        <div 
+       
+        >
+         <Link
+          style={{
+            color:"white"
+          }}
+          to="/card"
+         >
+         Card</Link>
+        </div>
         <div>
          {
            current ? (

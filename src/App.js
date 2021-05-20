@@ -12,6 +12,7 @@ import UpdateProfile from './components/Details/UpdateProfile';
 import Quote from './components/Details/Quote';
 import NewTest from './components/Details/NewTest';
 import BuildAgain from './components/Details/BuildAgain';
+import CardMove from './CardMove/CardMove';
 
 function App() {
   // const {mgs} = useContext(AuthContext)
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <PrivateRoute path="/" exact component={HomeScreen} />    
           <PrivateRoute path="/qoute" exact component={Quote} />    
+          <PrivateRoute path="/card" exact component={CardMove} />    
           <PrivateRoute path="/yes" exact component={BuildAgain} />    
           <PrivateRoute path="/test" exact component={NewTest} />    
           <PrivateRoute path="/dashboard" exact component={Deshboard} />    
